@@ -24,7 +24,7 @@ export type ActionDispatchers<T extends { [k in keyof T]: Action }> =  {
 //     return (p: PayloadFromActionFunc<A>) => [a.name, p]
 // }
 
-export function actionsDispatchers<T extends { [k in keyof T]: Action }, S=any>(store: Store_, actions: T) {
+export function actionDispatcher<T extends { [k in keyof T]: Action }, S=any>(store: Store_, actions: T) {
     return mapProperties(actions, key => (payload) => store.dispatch(key, payload)) as ActionDispatchers<T>;
 }
 //

@@ -7,11 +7,11 @@ A bunch of micro libraries that I use a bunch
 npm: `@beattyml1/action-map`
 
 ```ts
-import {actionsDispatchers} from '@beattyml1/action-map';
+import {actionDispatcher} from '@beattyml1/action-map';
 import {store} from './your-store'
 import {actions} from './your-actions'
 
-export const dispatcher = actionsDispatchers(store, actions);
+export const dispatcher = actionDispatcher(store, actions);
 dispatch.setSomeData(somePayload)
 ```
 
