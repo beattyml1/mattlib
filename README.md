@@ -12,6 +12,7 @@ import {store} from './your-store'
 import {actions} from './your-actions'
 
 export const dispatcher = actionsDispatchers(store, actions);
+dispatch.setSomeData(somePayload)
 ```
 
 In theory should work for vuex or redux as long as 
