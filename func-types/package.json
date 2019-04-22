@@ -1,0 +1,11 @@
+{
+  "name": "@beattyml1/func-types",
+  "private": false,
+  "author": "Matthew Beatty",
+  "license": "MIT",
+  "version": "1.0.0",
+  "types": "index.d.ts",
+  "dependencies": {
+
+  }
+}

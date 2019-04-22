@@ -1,0 +1,12 @@
+{
+  "name": "@beattyml1/mattlib",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.7.1",
+    "typescript": "^3.4.4",
+    "ts-jest": "^24.0.2",
+    "webpack": "^4.30.0",
+    "webpack-env": "^0.8.0"
+  }
+}

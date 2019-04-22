@@ -1,0 +1,12 @@
+{
+  "name": "@beattyml1/action-map",
+  "author": "Matthew Beatty",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "dependencies": {
+    "@beattyml1/map-properties": "^1.0.0",
+    "@beattyml1/func-types": "^1.0.0"
+  }
+}
