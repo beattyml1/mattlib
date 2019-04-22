@@ -12,13 +12,25 @@ import {store} from './your-store'
 import {actions} from './your-actions'
 
 export const dispatcher = actionDispatcher(store, actions);
-dispatch.setSomeData(somePayload)
+dispatch.setSomeData(somePayload) // Strong typed both on func name and the payload type!
 ```
 
 In theory should work for vuex or redux as long as 
 ```ts
 type Store = { dispatch: (name: string, payload: any) => any
 type Action = (state: State, payload) => State
+```
+
+# getter-map
+npm: `@beattyml1/getter-map`
+
+```ts
+import {actionDispatcher} from '@beattyml1/action-map';
+import {store} from './your-store'
+import {getters} from './your-getters'
+
+export const get = actionDispatcher(store, actions);
+let x = get.setSomeData; // Strongly Typed both the name and type!
 ```
 
 
