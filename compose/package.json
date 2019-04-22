@@ -1,0 +1,12 @@
+{
+  "name": "@beattyml1/compose",
+  "private": false,
+  "author": "Matthew Beatty",
+  "license": "MIT",
+  "version": "1.0.1",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "dependencies": {
+    "@beattyml1/func-types": "^1.0.0"
+  }
+}

@@ -44,3 +44,22 @@ import {obj} from './your-code'
 export const objPropNames = mapProperties(obj, key => key);
 ```
 
+# compose
+npm: `@beattyml1/compose`
+
+```ts
+import {pipe} from '@beattyml1/compose'
+
+let add = (x: number, y: number) => x + y;
+let add1 = x => add(x, 1)
+
+
+let x = pipe(1)
+    .to(add1)
+    .to(add, 2)
+    .to(x => x + 1)
+    .to(x => [x, 1])
+    .to(([x, y]) => x + y)
+    .to(x => x.toFixed())
+    .result()
+```
